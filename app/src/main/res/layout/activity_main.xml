@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.melhorarsuamemoria.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:text="5 Maneiras de Melhorar Sua Memória"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
+            android:background="#90CAF9"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Dicas"
+            android:textAllCaps="true" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+
+            <Button
+                android:id="@+id/d1"
+                android:layout_width="60sp"
+                android:layout_height="60dp"
+                android:onClick="dica1"
+                android:text="Dica 1" />
+
+            <Button
+                android:id="@+id/d2"
+                android:layout_width="60sp"
+                android:layout_height="60dp"
+                android:onClick="dica2"
+                android:text="Dica 2"
+                android:layout_toRightOf="@+id/d1"/>
+
+            <Button
+                android:id="@+id/d3"
+                android:layout_width="60sp"
+                android:layout_height="60dp"
+                android:onClick="dica3"
+                android:text="Dica 3"
+                android:layout_toRightOf="@+id/d2"/>
+
+            <Button
+                android:id="@+id/d4"
+                android:layout_width="60sp"
+                android:layout_height="60dp"
+                android:onClick="dica4"
+                android:text="Dica 4"
+                android:layout_toRightOf="@+id/d3"/>
+
+            <Button
+                android:id="@+id/d5"
+                android:layout_width="60sp"
+                android:layout_height="60dp"
+                android:onClick="dica5"
+                android:text="Dica 5"
+                android:layout_toRightOf="@+id/d4"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Resumo"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/dica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="A memória é importante na vida adulta, principalmente por permitir a utilização de toda a aprendizagem anterior. Mas mantê-la afiada requer prática. Ed Cooke é capaz de memorizar a ordem de um baralho de cartas em 45 segundos. Ele é um competidor feroz em torneios de memória e foi considerado um Guru da Memória já aos vinte anos."
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/resumo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="350sp"
+            android:layout_height="350sp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/memoria" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Contato"
+            android:textAllCaps="true" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_dialog_email"
+            android:onClick="startSecondActivity"/>
+
+    </LinearLayout>
+
+</ScrollView>
